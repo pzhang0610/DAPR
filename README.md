@@ -31,10 +31,10 @@ Train the model by running
 * ```--num_strips```: number of strips of human body
 
 Other parameters can be set in the ```train.py``` 
+
 ## Evaluation
 Test the model by running
-```python test.py --dataset='sysu' --mode='eval' --eval_mode='all' --num_shot='single' --save_path='./logs/log'
-```
+```python test.py --dataset='sysu' --mode='eval' --eval_mode='all' --num_shot='single' --save_path='./logs/log'```
 * ```--dataset```: which dataset "sysu" or "regdb"
 * ```--mode```: which mode, "train" or "eval"
 * ```--eval_mode```: "all" or "indoor" search for SYSU only
