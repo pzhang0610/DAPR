@@ -23,7 +23,6 @@ And simultaneously, multiple head of classifiers with the improved part-aware BN
 ## Training
 Train the model by running
 ```python train.py --dataset='sysu' --train_batch=64 --num_instance=4 --optim='sgd' --lr=0.1 --num_strips=6```
-
 * ```--dataset``` : which dataset "sysu" or "regdb"
 * ```--train_batch```: batch size 
 * ```--num_instance```: number of each identity in a batch
@@ -36,7 +35,6 @@ Other parameters can be set in the ```train.py```
 Test the model by running
 ```python test.py --dataset='sysu' --mode='eval' --eval_mode='all' --num_shot='single' --save_path='./logs/log'
 ```
-
 * ```--dataset```: which dataset "sysu" or "regdb"
 * ```--mode```: which mode, "train" or "eval"
 * ```--eval_mode```: "all" or "indoor" search for SYSU only
@@ -44,7 +42,8 @@ Test the model by running
 * ```--save_path```: the saved model path
 
 ## Reference 
-[1] Wu, Ancong, Wei-Shi Zheng, Hong-Xing Yu, Shaogang Gong, and Jianhuang Lai. "Rgb-infrared cross-modality person re-identification." In CVPR, pp. 5380-5389, 2017. 
+[1] Wu, Ancong, Wei-Shi Zheng, Hong-Xing Yu, Shaogang Gong, and Jianhuang Lai. "Rgb-infrared cross-modality person re-identification." In CVPR, pp. 5380-5389, 2017.
+ 
 [2] Ye, Mang, Zheng Wang, Xiangyuan Lan, and Pong C. Yuen. "Visible thermal person re-identification via dual-constrained top-ranking." In IJCAI, 2018.
 
 
